@@ -500,8 +500,8 @@ body {
     }
     
     .footer-logo {
-      width: 70px;
-      height: 70px;
+      width: 90px;
+      height: 90px;
       object-fit: contain;
       filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
       margin-top: 15px;
