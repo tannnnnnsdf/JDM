@@ -75,8 +75,8 @@ body {
     }
     
     .church-logo {
-      width: 90px;
-      height: 90px;
+      width: 150px;
+      height: 150px;
       object-fit: contain;
       filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
     }
