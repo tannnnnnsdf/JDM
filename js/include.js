@@ -1,17 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
 
-  fetch("partials/header.html")
-    .then(res => res.text())
-    .then(html => {
-      const el = document.getElementById("header");
-      if (el) el.innerHTML = html;
-    });
+  const header = document.getElementById("header");
+  if (header) {
+    const res = await fetch("partials/header.html");
+    header.innerHTML = await res.text();
+  }
 
-  fetch("partials/footer.html")
-    .then(res => res.text())
-    .then(html => {
-      const el = document.getElementById("footer");
-      if (el) el.innerHTML = html;
-    });
+  const footer = document.getElementById("footer");
+  if (footer) {
+    const res = await fetch("partials/footer.html");
+    footer.innerHTML = await res.text();
+  }
 
 });
