@@ -2,15 +2,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const header = document.getElementById("header");
   if (header) {
-    const res = await fetch("/partials/header.html");
+    const res = await fetch("../partials/header.html");
     header.innerHTML = await res.text();
   }
 
   const footer = document.getElementById("footer");
   if (footer) {
-    const res = await fetch("/partials/footer.html");
+    const res = await fetch("../partials/footer.html");
     footer.innerHTML = await res.text();
   }
 
 });
+
 
